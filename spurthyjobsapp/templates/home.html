@@ -9,6 +9,7 @@
 
 <body>
 
+    <!-- NAVBAR -->
     <div class="navbar">
         <div class="logo">Spurthy Job Portal</div>
 
@@ -20,30 +21,31 @@
         </div>
     </div>
 
+    <!-- HERO SECTION -->
     <div class="hero">
         <h1>Find Your Dream Job 🚀</h1>
         <p>Build your career with Spurthy Job Portal</p>
 
-        <a href="/jobs" class="btn">Explore Jobs</a>
+        <a href="#jobs" class="btn">Explore Jobs</a>
     </div>
 
-    <!-- JOB SECTION (IMPORTANT) -->
-    <div class="jobs">
+    <!-- JOBS SECTION -->
+    <div id="jobs" style="margin-top:60px; text-align:center;">
         <h2>Latest Jobs</h2>
-
-        {% for job in jobs %}
-            <div class="job-card">
-                <h3>{{ job.title }}</h3>
-                <p><b>Company:</b> {{ job.company }}</p>
-                <p><b>Location:</b> {{ job.location }}</p>
-                <p>{{ job.description }}</p>
-                <button class="btn">Apply Now</button>
-            </div>
-        {% empty %}
-            <p>No jobs available right now.</p>
-        {% endfor %}
-
     </div>
+
+    {% for job in jobs %}
+        <div style="width:60%; margin:20px auto; background:white; padding:15px; border-radius:10px;">
+            <h3>{{ job.title }}</h3>
+            <p><b>Company:</b> {{ job.company }}</p>
+            <p><b>Location:</b> {{ job.location }}</p>
+            <p>{{ job.description }}</p>
+
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+    {% empty %}
+        <p style="text-align:center;">No jobs available</p>
+    {% endfor %}
 
 </body>
 </html>
