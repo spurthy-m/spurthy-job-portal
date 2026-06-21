@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jobs - Spurthy Job Portal</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">Spurthy Job Portal</div>
+
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/jobs">Jobs</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <h1 style="text-align:center; margin-top:50px;">Available Jobs</h1>
+
+    <div class="job-container">
+
+        <div class="job-card">
+            <h3>Python Developer</h3>
+            <p>Location: Chennai</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Django Intern</h3>
+            <p>Location: Remote</p>
+            <button>Apply Now</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Web Developer</h3>
+            <p>Location: Bangalore</p>
+            <button>Apply Now</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
