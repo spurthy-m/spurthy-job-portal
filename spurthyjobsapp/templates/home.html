@@ -27,5 +27,23 @@
         <a href="/jobs" class="btn">Explore Jobs</a>
     </div>
 
+    <!-- JOB SECTION (IMPORTANT) -->
+    <div class="jobs">
+        <h2>Latest Jobs</h2>
+
+        {% for job in jobs %}
+            <div class="job-card">
+                <h3>{{ job.title }}</h3>
+                <p><b>Company:</b> {{ job.company }}</p>
+                <p><b>Location:</b> {{ job.location }}</p>
+                <p>{{ job.description }}</p>
+                <button class="btn">Apply Now</button>
+            </div>
+        {% empty %}
+            <p>No jobs available right now.</p>
+        {% endfor %}
+
+    </div>
+
 </body>
 </html>
