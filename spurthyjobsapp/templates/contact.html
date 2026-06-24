@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Spurthy Job Portal</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/jobs/">Jobs</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+    </div>
+
+    <h1 align="center">Contact Spurthy Job Portal</h1>
+
+    <hr>
+
+    <h2>Get in Touch</h2>
+
+    <p>
+        We are always happy to help job seekers and recruiters.
+        If you have any questions or suggestions, feel free to contact us.
+    </p>
+
+    <h3>Contact Details</h3>
+
+    <p><b>Email:</b> support@spurthyjobportal.com</p>
+    <p><b>Phone:</b> +91 98765 43210</p>
+    <p><b>Address:</b> Bengaluru, Karnataka, India</p>
+
+    <h3>Send a Message</h3>
+
+    <form>
+        <label>Name:</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+
+        <label>Subject:</label><br>
+        <input type="text" placeholder="Enter subject"><br><br>
+
+        <label>Message:</label><br>
+        <textarea rows="5" cols="40" placeholder="Write your message"></textarea><br><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <hr>
+
+    <center>
+        <p><b>© 2026 Spurthy Job Portal | Connecting Talent with Opportunities</b></p>
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/jobs/">Jobs</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+    </div>
+
+    <h1 align="center">Student Login</h1>
+
+    <hr>
+
+    <form>
+
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+
+        <label>Password</label><br>
+        <input type="password" placeholder="Enter your password"><br><br>
+
+        <button type="submit">Login</button>
+        <button type="reset">Clear</button>
+
+    </form>
+
+    <hr>
+
+    <center>
+        <p>New User? Register Here</p>
+    </center>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/jobs/">Jobs</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+    </div>
+
+    <h1 align="center">Student Registration</h1>
+
+    <hr>
+
+    <form>
+
+        <label>Name:</label><br>
+        <input type="text" placeholder="Enter your name"><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" placeholder="Enter your password"><br><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear</button>
+
+    </form>
+
+    <hr>
+
+    <center>
+        <p>Already have an account? Login Here</p>
+    </center>
+
+</body>
+</html>

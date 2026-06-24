@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recruiter Registration</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/jobs/">Jobs</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+    </div>
+
+    <h1 align="center">Recruiter Registration</h1>
+
+    <hr>
+
+    <form>
+
+        <label>Company Name</label><br>
+        <input type="text" placeholder="Enter Company Name"><br><br>
+
+        <label>Recruiter Name</label><br>
+        <input type="text" placeholder="Enter Recruiter Name"><br><br>
+
+        <label>Email</label><br>
+        <input type="email" placeholder="Enter Email"><br><br>
+
+        <label>Phone Number</label><br>
+        <input type="tel" placeholder="Enter Phone Number"><br><br>
+
+        <label>Password</label><br>
+        <input type="password" placeholder="Create Password"><br><br>
+
+        <label>Confirm Password</label><br>
+        <input type="password" placeholder="Confirm Password"><br><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+    <hr>
+
+    <center>
+        <p>Already registered? Login here.</p>
+    </center>
+
+</body>
+</html>

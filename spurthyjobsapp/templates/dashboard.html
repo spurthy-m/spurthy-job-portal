@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="menu">
+        <a href="/">Home</a>
+        <a href="/jobs/">Jobs</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+        <a href="/dashboard/">Dashboard</a>
+    </div>
+
+    <h1 align="center">Student Dashboard</h1>
+
+    <hr>
+
+    <h2>Welcome, Student!</h2>
+
+    <p>Select an option below:</p>
+
+    <ul>
+        <li>👤 View Profile</li>
+        <li>📄 Upload Resume</li>
+        <li>💼 Browse Jobs</li>
+        <li>📝 Applied Jobs</li>
+        <li>⚙️ Account Settings</li>
+        <li>🚪 Logout</li>
+    </ul>
+
+    <hr>
+
+    <h2>Quick Statistics</h2>
+
+    <p>Total Jobs Available: 100+</p>
+    <p>Applied Jobs: 5</p>
+    <p>Saved Jobs: 12</p>
+
+    <hr>
+
+    <center>
+        <p><b>© 2026 Spurthy Job Portal</b></p>
+    </center>
+
+</body>
+</html>
