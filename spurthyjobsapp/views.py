@@ -59,4 +59,4 @@ def job_details(request):
     return render(request, 'job_details.html')
 
 def apply_job(request):
-    return render(request, 'apply_job.html')
+    return render(request, 'apply_job.html') i
